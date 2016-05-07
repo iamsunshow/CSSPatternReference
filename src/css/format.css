@@ -1,0 +1,67 @@
+html{
+    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-size:14px;
+}
+body{
+    background:rgba(0,0,0,.9);
+}
+.wrap{
+    border-bottom:1px dashed #fff;
+    overflow:hidden;
+}
+.wrap pre{
+    line-height:24px;
+}
+.wrap code{
+    white-space:pre;
+}
+.wrap code{
+    color:#fff;
+}
+.wrap code .html,.wrap code .html-child,.wrap code .html-child-child{
+    color:#ffff62;
+}
+.wrap code .html-child{
+    margin-left:28px;
+}
+.wrap code .html-child-child{
+    margin-left:56px;
+}
+.wrap code .css-class{
+    color:#4effff;
+}
+.wrap code .css-class-tag{
+    color:#ffff62;
+}
+.wrap code .css-brace{
+    color:#ffff62;
+}
+.wrap code .css-property{
+    margin-left:28px;
+    color:#68ff60;
+}
+.wrap code .css-value{
+    color:#fd9da0;
+}
+.wrap .title,.wrap .demo{
+    background:#eee;
+}
+.wrap .title{
+    display:block;
+    text-indent:28px;
+    font-weight:bold;
+    font-size:16px;
+    color:#333;
+    line-height:30px;
+}
+.wrap .demo{
+    padding:20px;
+    margin:20px;
+    border:1px dashed #ccc;
+}
+.wrap .desc{
+    color:#fff;
+    white-space:pre;
+    word-break:break-word;
+    line-height:24px;
+}

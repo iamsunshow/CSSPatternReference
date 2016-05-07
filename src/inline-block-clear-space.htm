@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/lib/alike.css"/>
+        <link rel="stylesheet" href="css/format.css"/>
+	</head>
+	<body>
+        <!-- inline-block-clear-space-1 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="inline-block-clear-space-1"&gt;content1&lt;/div&gt;</span><span class="html">&lt;div class="inline-block-clear-space-1"&gt;content2&lt;/div&gt;</span><span class="html">&lt;div class="inline-block-clear-space-1"&gt;content3&lt;/div&gt;</span><span class="html">&lt;div class="inline-block-clear-space-1"&gt;content4&lt;/div&gt;</span><span class="html">&lt;div class="inline-block-clear-space-1"&gt;content5&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.inline-block-clear-space-1</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">color</span>:<span class="css-value">#333</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; 
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .inline-block-clear-space-1{
+                background:#ccc;
+                color:#333;
+                display:inline-block;  
+            }
+            </style>
+            <div class="demo">
+                <div class="inline-block-clear-space-1">content1</div><div class="inline-block-clear-space-1">content2</div><div class="inline-block-clear-space-1">content3</div><div class="inline-block-clear-space-1">content4</div><div class="inline-block-clear-space-1">content5</div>
+            </div>
+            <p class="desc">
+            优点：易于理解。
+            缺点：标签查看过于繁琐。
+            适用场景：后端动态生成HTML结构。
+            </p>
+        </div>
+        <!-- inline-block-clear-space-2 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="inline-block-clear-space-2"&gt;content1&lt;/div&gt;&lt;!--</span>
+                    <span class="html">--&gt;&lt;div class="inline-block-clear-space-2"&gt;content2&lt;/div&gt;&lt;!--</span>
+                    <span class="html">--&gt;&lt;div class="inline-block-clear-space-2"&gt;content3&lt;/div&gt;&lt;!--</span>
+                    <span class="html">--&gt;&lt;div class="inline-block-clear-space-2"&gt;content4&lt;/div&gt;&lt;!--</span>
+                    <span class="html">--&gt;&lt;div class="inline-block-clear-space-2"&gt;content5&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.inline-block-clear-space-2</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">color</span>:<span class="css-value">#333</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; 
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .inline-block-clear-space-2{
+                background:#ccc;
+                color:#333;
+                display:inline-block;  
+            }
+            </style>
+            <div class="demo">
+                <div class="inline-block-clear-space-2">content1</div><!--
+                --><div class="inline-block-clear-space-2">content2</div><!--
+                --><div class="inline-block-clear-space-2">content3</div><!--
+                --><div class="inline-block-clear-space-2">content4</div><!--
+                --><div class="inline-block-clear-space-2">content5</div>
+            </div>
+            <p class="desc">
+            优点：易于理解。
+            缺点：冗余的注释标签。
+            适用场景：后端动态生成HTML结构。
+            </p>
+        </div>
+        <!-- one-column-horizontal-center-3 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="inline-block-clear-space-3"&gt;content1&lt;/div&gt;</span>
+                    <span class="html">&lt;div class="inline-block-clear-space-3"&gt;content2&lt;/div&gt;</span>
+                    <span class="html">&lt;div class="inline-block-clear-space-3"&gt;content3&lt;/div&gt;</span>
+                    <span class="html">&lt;div class="inline-block-clear-space-3"&gt;content4&lt;/div&gt;</span>
+                    <span class="html">&lt;div class="inline-block-clear-space-3"&gt;content5&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.inline-block-clear-space-3</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">color</span>:<span class="css-value">#333</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; 
+                    <span class="css-property">font-size</span>:<span class="css-value">16px</span>; /* attention */
+                    <span class="css-property">margin-left</span>:<span class="css-value">-4px</span>; /* attention */
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .inline-block-clear-space-3{
+                background:#ccc;
+                color:#333;
+                display:inline-block; 
+                font-size:14px; /* attention */
+			    margin-left:-4px; /* attention */
+            }
+            </style>
+            <div class="demo">
+                <div class="inline-block-clear-space-3">content1</div>
+                <div class="inline-block-clear-space-3">content2</div>
+                <div class="inline-block-clear-space-3">content3</div>
+                <div class="inline-block-clear-space-3">content4</div>
+                <div class="inline-block-clear-space-3">content5</div>
+            </div>
+            <p class="desc">
+            优点：兼容性较强，易于理解。
+            缺点：需要已知字体大小并计算其1/4的宽度（空格一般是字体大小的1/4）作为margin-left的值，如果计算出结果是小数则会出现误差。
+            适用场景：已知字体大小的环境。
+            </p>
+        </div>
+        <!-- one-column-horizontal-center-4 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="inline-block-clear-space-4-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="inline-block-clear-space-4"&gt;content1&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="inline-block-clear-space-4"&gt;content2&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="inline-block-clear-space-4"&gt;content3&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="inline-block-clear-space-4"&gt;content4&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="inline-block-clear-space-4"&gt;content5&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.inline-block-clear-space-4-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">font-size</span>:<span class="css-value">0</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.inline-block-clear-space-4</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">color</span>:<span class="css-value">#333</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; 
+                    <span class="css-property">font-size</span>:<span class="css-value">14px</span>; /* attention */
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .inline-block-clear-space-4-wrap{
+                font-size:0;
+            }
+            .inline-block-clear-space-4{
+                background:#ccc;
+                color:#333;
+                display:inline-block; 
+                font-size:14px; /* attention */
+            }
+            </style>
+            <div class="demo">
+                <div class="inline-block-clear-space-4-wrap">
+                    <div class="inline-block-clear-space-4">content1</div>
+                    <div class="inline-block-clear-space-4">content2</div>
+                    <div class="inline-block-clear-space-4">content3</div>
+                    <div class="inline-block-clear-space-4">content4</div>
+                    <div class="inline-block-clear-space-4">content5</div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：兼容性较强，易于理解。
+            缺点：需要为目标元素重新设置字体或将字体设置到目标元素上。
+            适用场景：需要将字体设置到目标元素上的环境。
+            </p>
+        </div>
+        <!-- inline-block-clear-space-5 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="inline-block-clear-space-5"&gt;content1</span>
+                    <span class="html">&lt;div class="inline-block-clear-space-5"&gt;content2</span>
+                    <span class="html">&lt;div class="inline-block-clear-space-5"&gt;content3</span>
+                    <span class="html">&lt;div class="inline-block-clear-space-5"&gt;content4</span>
+                    <span class="html">&lt;div class="inline-block-clear-space-5"&gt;content5</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.inline-block-clear-space-5</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">color</span>:<span class="css-value">#333</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; 
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .inline-block-clear-space-5{
+                background:#ccc;
+                color:#333;
+                display:inline-block;  
+            }
+            </style>
+            <div class="demo">
+                <span class="inline-block-clear-space-5">content1
+                <span class="inline-block-clear-space-5">content2
+                <span class="inline-block-clear-space-5">content3
+                <span class="inline-block-clear-space-5">content4
+                <span class="inline-block-clear-space-5">content5
+            </div>
+            <p class="desc">
+            缺点：标签未闭合，而且父容器标签不能和子元素标签相同。
+            适用场景：不推荐使用，不严谨的文档模式。
+            </p>
+        </div>
+    </body>
+</html>

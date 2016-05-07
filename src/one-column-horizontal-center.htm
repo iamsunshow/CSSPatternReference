@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/lib/alike.css"/>
+        <link rel="stylesheet" href="css/format.css"/>
+	</head>
+	<body>
+        <!-- one-column-horizontal-center-1 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-horizontal-center-1"&gt;&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-horizontal-center-1</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">margin</span>:<span class="css-value">0 auto</span>; /* attention */
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-horizontal-center-1{
+                background:#ccc;
+                height:50px;
+                margin:0 auto; /* attention */
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-horizontal-center-1"></div>
+            </div>
+            <p class="desc">
+            优点：兼容性比较强，易于理解，不需要已知内容宽度。
+            适用场景：内容为定宽的block元素。
+            </p>
+        </div>
+        <!-- one-column-horizontal-center-2 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-horizontal-center-2-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-horizontal-center-2"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-horizontal-center-2-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">font-size</span>:<span class="css-value">0</span>; /* attention */
+                    <span class="css-property">text-align</span>:<span class="css-value">center</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-horizontal-center-2</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-horizontal-center-2-wrap{
+                font-size:0; /* attention */
+			    text-align:center; /* attention */
+            }
+            .one-column-horizontal-center-2{
+                background:#ccc;
+                display:inline-block; /* attention */
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-horizontal-center-2-wrap">
+                    <div class="one-column-horizontal-center-2"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：易于理解，不需要已知内容宽度。
+            缺点：依赖父容器的text-align:center;，而且还需要处理inline-block元素的空格导致的间距问题和兼容问题。
+            适用场景：容器内为inline-block或inline的元素。
+            </p>
+        </div>
+        <!-- one-column-horizontal-center-3 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-horizontal-center-3-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-horizontal-center-3-helper"&gt;</span>
+                    <span class="html-child-child">&lt;div class="one-column-horizontal-center-3"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-horizontal-center-3-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">overflow</span>:<span class="css-value">hidden</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-horizontal-center-3-helper</span><span class="css-brace">{</span>
+                    <span class="css-property">float</span>:<span class="css-value">left</span>; /* attention */
+                    <span class="css-property">left</span>:<span class="css-value">50%</span>; /* attention */
+                    <span class="css-property">position</span>:<span class="css-value">relative;</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-horizontal-center-3</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">position</span>:<span class="css-value">relative</span>; /* attention */
+                    <span class="css-property">right</span>:<span class="css-value">50%</span>; /* attention */
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-horizontal-center-3-wrap{
+                overflow:hidden; /* attention */
+            }
+            .one-column-horizontal-center-3-helper{
+                float:left; /* attention */
+			    left:50%; /* attention */
+                position:relative; /* attention */
+            }
+            .one-column-horizontal-center-3{
+                background:#ccc;
+                height:50px;
+                position:relative; /* attention */
+			    right:50%; /* attention */
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-horizontal-center-3-wrap">
+                    <div class="one-column-horizontal-center-3-helper">
+                        <div class="one-column-horizontal-center-3"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：兼容性比较强，不需要已知内容宽度。
+            缺点：不易于理解，依赖的父容器较多。
+            适用场景：结构较复杂的情况。
+            </p>
+        </div>
+        <!-- one-column-horizontal-center-4 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-horizontal-center-4"&gt;&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-horizontal-center-4</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">left</span>:<span class="css-value">50%</span>; /* attention */
+                    <span class="css-property">margin-left</span>:<span class="css-value">-100px</span>; /* attention */
+                    <span class="css-property">position</span>:<span class="css-value">relative</span>; /* attention */
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-horizontal-center-4{
+                background:#ccc;
+                height:50px;
+                left:50%; /* attention */
+                margin-left:-100px; /* attention */
+                position:relative; /* attention */
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-horizontal-center-4"></div>
+            </div>
+            <p class="desc">
+            优点：兼容性比较强，易于理解。
+            缺点：需要已知内容宽度。
+            适用场景：已知容器内元素宽度。
+            </p>
+        </div>
+       <!-- one-column-horizontal-center-5 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-horizontal-center-5-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-horizontal-center-5"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-horizontal-center-5-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">-webkit-box-orient</span>:<span class="css-value">horizontal</span>; /* attention */
+                    <span class="css-property">-webkit-box-pack</span>:<span class="css-value">center</span>; /* attention */
+                    <span class="css-property">display</span>:<span class="css-value">-webkit-box</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-horizontal-center-5</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-horizontal-center-5-wrap{
+			    -webkit-box-orient:horizontal; /* attention */
+			    -webkit-box-pack:center; /* attention */
+                display:-webkit-box; /* attention */
+            }
+            .one-column-horizontal-center-5{
+                background:#ccc;
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-horizontal-center-5-wrap">
+                    <div class="one-column-horizontal-center-5"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：易于理解，不需要已知内容宽度。
+            缺点：兼容性较差，依赖父容器的display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;。
+            适用场景：支持-webkit-box的元素。
+            </p>
+        </div>
+        <!-- one-column-horizontal-center-6 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-horizontal-center-6-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-horizontal-center-6"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-horizontal-center-6-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">margin</span>:<span class="css-value">0 auto</span>; /* attention */
+                    <span class="css-property">width</span>:<span class="css-value">-webkit-fit-content</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-horizontal-center-6</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-horizontal-center-6-wrap{
+			    margin:0 auto; /* attention */
+			    width:-webkit-fit-content; /* attention */
+            }
+            .one-column-horizontal-center-6{
+                background:#ccc;
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-horizontal-center-6-wrap">
+                    <div class="one-column-horizontal-center-6"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：易于理解，不需要已知内容宽度。
+            缺点：依赖父容器的margin:0 auto;width:-webkit-fit-content;。
+            适用场景：支持-webkit-fit-content的元素。
+            </p>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/lib/alike.css"/>
+        <link rel="stylesheet" href="css/format.css"/>
+	</head>
+	<body>
+        <!-- one-column-vertical-center-1 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-1-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-1"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                   <span class="css-class">.one-column-vertical-center-1-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-property">line-height</span>:<span class="css-value">100px</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-1</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-property">vertical-align</span>:<span class="css-value">middle</span>; /* attention */
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-1-wrap{
+                height:100px;
+                line-height:100px; /* attention */
+            }
+            .one-column-vertical-center-1{
+                background:#ccc;
+                display:inline-block; /* attention */
+                height:50px;
+                width:200px;
+                vertical-align:middle; /* attention */
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-1-wrap">
+                    <div class="one-column-vertical-center-1"></div>
+                </div>
+            </div>
+            <p class="desc">
+            缺点：不易于理解。
+            适用场景：容器内容为inline或inline-block的元素。
+            </p>
+        </div>
+        <!-- one-column-vertical-center-2 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-2-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-2"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-vertical-center-2-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-property">position</span>:<span class="css-value">relative</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-2</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">margin-top</span>:<span class="css-value">-25px</span>; /* attention */
+                    <span class="css-property">position</span>:<span class="css-value">absolute</span>; /* attention */
+                    <span class="css-property">top</span>:<span class="css-value">50%</span>; /* attention */
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-2-wrap{
+                height:100px;
+			    position:relative; /* attention */
+            }
+            .one-column-vertical-center-2{
+                background:#ccc;
+                height:50px;
+			    margin-top:-25px; /* attention */
+			    position:absolute; /* attention */
+			    top:50%; /* attention */
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-2-wrap">
+                    <div class="one-column-vertical-center-2"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：兼容性比较强，易于理解。
+            缺点：依赖于父元素的position:relative;。
+            适用场景：已知容器内元素高度。
+            </p>
+        </div>
+        <!-- one-column-vertical-center-3 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-3-helper"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-3"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                   <span class="css-class">.one-column-vertical-center-3-helper</span><span class="css-brace">{</span>
+                    <span class="css-property">display</span>:<span class="css-value">table-cell</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-property">vertical-align</span>:<span class="css-value">middle</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-3</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-3-helper{
+			    display:table-cell; /* attention */
+                height:100px;
+			    vertical-align:middle; /* attention */
+            }
+            .one-column-vertical-center-3{
+                background:#ccc;
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-3-helper">
+                    <div class="one-column-vertical-center-3"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：易于理解，不需要已知内容高度。
+            缺点：依赖于父容器的display:table-cell;vertical-align:middle;。
+            适用场景：有辅助容器的环境。
+            </p>
+        </div>
+        <!-- one-column-vertical-center-4 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-4-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-4"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                   <span class="css-class">.one-column-vertical-center-4-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-property">overflow</span>:<span class="css-value">hidden</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-4</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">margin</span>:<span class="css-value">25px 0</span>; /* attention */
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-4-wrap{
+                height:100px;
+			    overflow:hidden; /* attention */
+            }
+            .one-column-vertical-center-4{
+			    margin:25px 0; /* attention */
+                background:#ccc;
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-4-wrap">
+                    <div class="one-column-vertical-center-4"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：兼容性较强，易于理解。
+            缺点：依赖于父容器的overflow:hidden;，因为会出现边距重叠的现象。
+            适用场景：已知容器目标高度的环境。
+            </p>
+        </div>
+        <!-- one-column-vertical-center-5 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-5-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-5"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                   <span class="css-class">.one-column-vertical-center-5-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-5:before</span><span class="css-brace">{</span>
+                    <span class="css-property">content</span>:<span class="css-value">""</span>; /* attention */
+                    <span class="css-property">display</span>:<span class="css-value">block</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">50%</span>; /* attention */
+                    <span class="css-property">margin-bottom</span>:<span class="css-value">-25px</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-5</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-5-wrap{
+                height:100px;
+            }
+            .one-column-vertical-center-5-wrap:before{
+                content:""; /* attention */
+                display:block; /* attention */
+                height:50%; /* attention */
+                margin-bottom:-25px; /* attention */
+            }
+            .one-column-vertical-center-5{
+                background:#ccc;
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-5-wrap">
+                    <div class="one-column-vertical-center-5"></div>
+                </div>
+            </div>
+            <p class="desc">
+            缺点：依赖于父容器的伪元素。
+            适用场景：已知容器目标高度的环境。
+            </p>
+        </div>
+        <!-- one-column-vertical-center-6 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-6-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-6"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                   <span class="css-class">.one-column-vertical-center-6-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-6:before</span><span class="css-brace">{</span>
+                    <span class="css-property">content</span>:<span class="css-value">""</span>; /* attention */
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">100%</span>; /* attention */
+                    <span class="css-property">vertical-align</span>:<span class="css-value">middle</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-6</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-property">vertical-align</span>:<span class="css-value">middle</span>; /* attention */
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-6-wrap{
+                height:100px;
+            }
+            .one-column-vertical-center-6-wrap:before{
+                content:""; /* attention */
+                display:inline-block; /* attention */
+                height:100%; /* attention */
+                vertical-align:middle; /* attention */
+            }
+            .one-column-vertical-center-6{
+                background:#ccc;
+                display:inline-block; /* attention */
+                height:50px;
+                width:200px;
+                vertical-align:middle; /* attention */
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-6-wrap">
+                    <div class="one-column-vertical-center-6"></div>
+                </div>
+            </div>
+            <p class="desc">
+            缺点：不易于理解。
+            适用场景：容器内容为inline-block的元素。
+            </p>
+        </div>
+        <!-- one-column-vertical-center-7 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-7-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-7"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                   <span class="css-class">.one-column-vertical-center-7-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">-webkit-box-orient</span>:<span class="css-value">vertical</span>; /* attention */
+                    <span class="css-property">-webkit-box-pack</span>:<span class="css-value">center</span>; /* attention */
+                    <span class="css-property">display</span>:<span class="css-value">-webkit-box</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-7</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-property">vertical-align</span>:<span class="css-value">middle</span>; /* attention */
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-7-wrap{
+			    -webkit-box-orient:vertical; /* attention */
+			    -webkit-box-pack:center; /* attention */
+                display:-webkit-box; /* attention */
+                height:100px;
+            }
+            .one-column-vertical-center-7{
+                background:#ccc;
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-7-wrap">
+                    <div class="one-column-vertical-center-7"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：易于理解。
+            缺点：兼容性较差，依赖父容器的display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-pack:center;。
+            适用场景：支持-webkit-box的元素。
+            </p>
+        </div>
+    </body>
+</html>

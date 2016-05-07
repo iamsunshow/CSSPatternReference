@@ -1,0 +1,87 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/lib/alike.css"/>
+        <link rel="stylesheet" href="css/format.css"/>
+        <style>
+        #wrap{
+            width:300px;
+            margin:0 auto;
+            background:black;
+            overflow:hidden;
+        }
+        #col{
+            width:300px;
+            font-size:0;
+        }
+        #d00,#d01,#d02,
+        #d10,#d11,#d12,
+        #d20,#d21,#d22{
+            display:inline-block;
+            width:100px;
+            height:100px;
+        }
+        #d00{
+            background:red;
+        }
+        #d01{
+            background:yellow;
+        }
+        #d02{
+            background:blue;
+        }
+        #d10{
+            background:green;
+        }
+        #d11{
+            background:gray;
+        }
+        #d12{
+            background:purple;
+        }
+        #d20{
+            background:orange;
+        }
+        #d21{
+            background:maroon;
+        }
+        #d22{
+            background:pink;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- 为何考虑浮动元素，因为正常文档流都是自上向下的，即上下结构，而浮动元素可以使机构变成左右结构，所以可以看出负值对左右结构元素的影响 -->
+        <!-- inline-block元素只适用于左右负值的情况，不适合上下负值的情况，并且下边距为负值时会向下移动且被下面元素覆盖 -->
+        <!--
+            负上：移动并占据上边元素空间，带领自身和下边文档流占据上边元素的位置，由于非浮动，即不脱离文档流，所以会覆盖上边元素
+            负左：移动并占据左边元素空间，带领自身和右边文档流占据左边元素的位置，由于浮动，即脱离文档流，所以会被上边元素覆盖
+            负下：不移动被下边元素占据空间，自身为下面文档流留出位置，由于非浮动，即不脱离文档流，所以会被下边元素覆盖
+            负右：不移动被右边元素占据空间，自身为右边面文档流留出位置，由于浮动，即脱离文档流，所以会被右边元素覆盖
+        -->
+        <!--
+            负上：自身是否会按照负值方向移动，并占据同方向元素位置(Y)，相邻反方向元素是否会跟随(Y)，相邻同方向元素是否受到影响也会移动，即为同方向元素留出位置(N)，是否会覆盖同方向元素，但不会被同方向元素覆盖(Y)(非浮动，即不脱离文档流)
+            负左：自身是否会按照负值方向移动，并占据同方向元素位置(Y)，相邻反方向元素是否会跟随(Y)，相邻同方向元素是否受到影响也会移动，即为同方向元素留出位置(N)，是否会覆盖同方向元素，但不会被同方向元素覆盖(Y)(浮动，即脱离文档流)
+            负下：自身是否会按照负值方向移动，并占据同方向元素位置(N)，相邻反方向元素是否会跟随(N)，相邻同方向元素是否受到影响也会移动，即为同方向元素留出位置(Y)，是否会覆盖同方向元素，但不会被同方向元素覆盖(N)(非浮动，即不脱离文档流)
+            负右：自身是否会按照负值方向移动，并占据同方向元素位置(N)，相邻反方向元素是否会跟随(N)，相邻同方向元素是否受到影响也会移动，即为同方向元素留出位置(Y)，是否会覆盖同方向元素，但不会被同方向元素覆盖(N)(浮动，即脱离文档流)
+        -->
+        <div id="wrap">
+            <div id="col">
+                <div id="d00"></div>
+                <div id="d01"></div>
+                <div id="d02"></div>
+            </div>
+            <div id="col">
+                <div id="d10"></div>
+                <div id="d11"></div>
+                <div id="d12"></div>
+            </div>
+            <div id="col">
+                <div id="d20"></div>
+                <div id="d21"></div>
+                <div id="d22"></div>
+            </div>
+        </div>
+    </body>
+</html>
